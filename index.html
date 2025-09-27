@@ -92,7 +92,115 @@
         </aside>
             </div>
          </section>
-         
+         <!-- Projetos -->
+               <section id="projetos" style="margin-top:18px">
+        <h2 style="margin-bottom:12px">Projetos recentes</h2>
+        <div class="projects-grid">
+          <article class="project card">
+            <h3>Landing Page Imobiliária</h3>
+            <p style="color:var(--muted);font-size:0.95rem;margin-bottom:8px">Gerador de landing pages com formulário e galeria.</p>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+            <div style="margin-top:10px;display:flex;gap:8px">
+              <a class="btn" href="#" onclick="openSample('https://github.com/')">Ver</a>
+              <a class="btn ghost" href="#">Código</a>
+            </div>
+          </article>
+
+              <article class="project card">
+            <h3>Painel de Produtividade</h3>
+            <p style="color:var(--muted);font-size:0.95rem;margin-bottom:8px">Widgets, tarefas e integrações simples.</p>
+            <div class="tags"><span class="tag">JS</span><span class="tag">LocalStorage</span></div>
+            <div style="margin-top:10px;display:flex;gap:8px">
+              <a class="btn" href="#">Ver</a>
+              <a class="btn ghost" href="#">Código</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+         <!-- SERVIÇOS -->
+      <section id="servicos" style="margin-top:28px">
+        <h2 style="margin-bottom:12px">Serviços e pacotes</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+          <div class="card">
+            <h3>Pacote Rápido</h3>
+            <p style="color:var(--muted);">Página simples (1-3 seções) — ideal para MVPs.</p>
+            <div style="margin-top:12px;font-weight:800">R$ XXX</div>
+            <div style="margin-top:10px"><button class="btn" onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">Contratar</button></div>
+          </div>
+          <div class="card">
+            <h3>Pacote Profissional</h3>
+            <p style="color:var(--muted);">Landing + formulário + SEO básico + deploy.</p>
+            <div style="margin-top:12px;font-weight:800">R$ XXX</div>
+            <div style="margin-top:10px"><button class="btn" onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">Contratar</button></div>
+          </div>
+          <div class="card">
+            <h3>Manutenção Mensal</h3>
+            <p style="color:var(--muted);">Atualizações, correções e melhorias mensais.</p>
+            <div style="margin-top:12px;font-weight:800">R$ XXX/mês</div>
+            <div style="margin-top:10px"><button class="btn" onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">Contratar</button></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEPOIMENTOS -->
+      <section style="margin-top:28px">
+        <h2 style="margin-bottom:12px">Depoimentos</h2>
+        <div class="testimonials">
+          <div class="testimonial card">
+            <strong>Cliente A</strong>
+            <p style="color:var(--muted);font-size:0.95rem">"Entrega rápida e comunicação excelente — recomendo."</p>
+          </div>
+          <div class="testimonial card">
+            <strong>Cliente B</strong>
+            <p style="color:var(--muted);font-size:0.95rem">"A solução funcionou bem e trouxe conversões."</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <!-- CONTATO -->
+      <section id="contato" style="margin-top:28px">
+        <h2 style="margin-bottom:12px">Contato</h2>
+        <div style="display:grid;grid-template-columns:1fr 320px;gap:16px;align-items:start">
+          <form class="card" onsubmit="sendContact(event)">
+            <label>Nome</label>
+            <input id="name" required />
+            <label>Email</label>
+            <input id="email" type="email" required />
+            <label>Mensagem</label>
+            <textarea id="message" required></textarea>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <button class="btn">Enviar</button>
+              <button type="button" class="btn ghost" onclick="copyEmail()">Copiar e-mail</button>
+            </div>
+          </form>
+
+                <aside class="card">
+            <h3>Informações</h3>
+            <p>Email: <strong id="emailText">seu.email@exemplo.com</strong></p>
+            <p>Localização: Remoto (Brasil)</p>
+            <div style="margin-top:12px">
+              <label style="font-weight:700">Newsletter</label>
+              <p>Receba dicas grátis e templates (1x por mês)</p>
+              <div style="display:flex;gap:8px;margin-top:8px">
+                <input id="newsletterEmail" placeholder="seu@email.com"/>
+                <button class="btn" type="button" onclick="subscribe()">Inscrever</button>
+              </div>
+              <p id="newsletterMsg"></p>
+            </div>
+          </aside>
+        </div>
+      </section>
     </main>
+
+       <footer>
+      <div>&copy; <span id="year"></span> Seu Nome • Desenvolvedor Web</div>
+      <div><a href="#">Termos</a> | <a href="#">Privacidade</a></div>
+    </footer>
+  </div>
+
+  <!-- JS externo -->
+  <script src="script.js"></script>
 </body>
 </html> 

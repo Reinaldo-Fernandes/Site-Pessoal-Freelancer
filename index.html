@@ -1,68 +1,69 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="description" content ="portlfolio e pagina de serviços para desenvolvedor web">
-    <meta property="og:title" content="Reinaldo - Desenvolvedor Front-end">
-    <meta property="og:description" content="Portfólio e página de serviços para desenvolvedor web">
-    <meta name="author" content="Reinaldo Fernandes">
-    <meta property="og:type" content="website">
-    <meta property="theme-color" content="#0f172a">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reinaldo Fernandes — Desenvolvedor Front-end & Freelancer</title>
+  <meta name="description" content="Portfólio e página de serviços para desenvolvedor iniciante / freelancer. Projetos, serviços, pacotes e contato." />
+  <meta property="og:title" content="Seu Nome — Desenvolvedor & Freelancer">
+  <meta property="og:description" content="Portfólio e página de serviços para desenvolvedor iniciante / freelancer.">
+  <meta name="author" content="Reinaldo Fernandes">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0f172a">
 
-    <script type="application/ld+json">
-        @context: "https://schema.org",
-        @type: "Person",
-        "name": "Reinaldo",
-        "url": "https://reinaldo.dev",
-        "sameAs": [
-            "https://www.linkedin.com/in/reinaldo-dev",
-        "jobTitle": "Desenvolvedor Front-end",
-    </script>
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Reinaldo Fernandes",
+    "url": "https://seudominio.com",
+    "sameAs": ["https://github.com/seuuser","https://www.linkedin.com/in/seuuser"],
+    "jobTitle": "Desenvolvedor Web / Freelancer"
+  }
+  </script>
 
-    <link rel="stylesheet" href="styles.css">
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="bg-dots"></div>
+  <div class="container">
     <header>
-        <!-- Background Dots -->
-    <div class="bg-dots">
-        <div class="container">
-            <div class="logo">RF</div>
-                <div style="font-weight:800">Reinaldo Fernandes</div>
-                    <div style="font-size: 12px; color:var(--muted)"> Desenvolvedor Web Front-End</div>
+      <div class="brand">
+        <div class="logo">RF</div>
+        <div>
+          <div style="font-weight:800">Reinaldo Fernandes</div>
+          <div style="font-size:12px;color:var(--muted)">Desenvolvedor Web • Freelancer</div>
         </div>
-    </div>
-
-    <!-- Navigation -->
-    <nav>
-        <a href="#Projetos">Projetos</href>
-        <a href="#Servicos">Serviços</href>
-        <a href="#Contato">Contatos</href>
-    </nav>
+      </div>
+      <nav>
+        <a href="#projetos">Projetos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
     </header>
 
     <main>
-        <!-- Hero -->
-         <section class="hero">
-            <div class="hero-left">
-                <h1>Eu crio interfaces limpas e funcionais — para produtos e freelances.</h1>
-                 <p>Sou um desenvolvedor web júnior / freelancer focado em HTML, CSS e JavaScript. Aqui estão meus projetos, serviços e pacotes pensados para quem precisa de entrega rápida e valor real.</p>
-
-                 <div class="cta-row">
-                    <button class="btn" onclick="document.getElementById('Contato').scrollIntoView();">Vamos conversar</button>
-                    <a href="#Projetos" class="btn-secondary">Ver meus projetos</a>
-                 </div>
-                  <div style="margin-top:18px;color:var(--muted);font-size:0.95rem">Disponível para trabalhos remotos • Respondo em até 48h</div>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-left">
+          <h1>Eu crio interfaces limpas e funcionais — para produtos e freelances.</h1>
+          <p>Sou um desenvolvedor web júnior / freelancer focado em HTML, CSS e JavaScript. Aqui estão meus projetos, serviços e pacotes pensados para quem precisa de entrega rápida e valor real.</p>
+          <div class="cta-row">
+            <button class="btn" onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">Contratar agora</button>
+            <a class="btn ghost" href="#projetos">Ver projetos</a>
+          </div>
+          <div style="margin-top:18px;color:var(--muted);font-size:0.95rem">Disponível para trabalhos remotos • Respondo em até 48h</div>
         </div>
-        <aside class="hero-right card" style="width:100%; max-width: 360px;">
-            
-             <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+
+        <aside class="hero-right card" style="width:100%;max-width:360px">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
             <div style="font-weight:800">Habilidades</div>
             <div style="font-size:12px;color:var(--muted)">Atualizadas</div>
           </div>
 
-        <div class="skills">
+          <div class="skills">
             <div>
               <div class="skill">
                 <div class="meta"><span>HTML & CSS</span><span>85%</span></div>
@@ -84,16 +85,16 @@
               </div>
             </div>
           </div>
-            
-          <div style="margin-top: 14px; display: flex; justify-content: space-between;">
-            <a class="btn" href="https://github.com/"> Github</a>
-            <a class="btn" href="https://www.linkedin.com/in/reinaldo-dev"> LinkedIn</a>
+
+          <div style="margin-top:14px;display:flex;justify-content:space-between;gap:8px">
+            <a class="btn" href="https://github.com/" target="_blank">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
           </div>
         </aside>
-            </div>
-         </section>
-         <!-- Projetos -->
-               <section id="projetos" style="margin-top:18px">
+      </section>
+
+      <!-- PROJETOS -->
+      <section id="projetos" style="margin-top:18px">
         <h2 style="margin-bottom:12px">Projetos recentes</h2>
         <div class="projects-grid">
           <article class="project card">
@@ -106,7 +107,7 @@
             </div>
           </article>
 
-              <article class="project card">
+          <article class="project card">
             <h3>Painel de Produtividade</h3>
             <p style="color:var(--muted);font-size:0.95rem;margin-bottom:8px">Widgets, tarefas e integrações simples.</p>
             <div class="tags"><span class="tag">JS</span><span class="tag">LocalStorage</span></div>
@@ -118,7 +119,7 @@
         </div>
       </section>
 
-         <!-- SERVIÇOS -->
+      <!-- SERVIÇOS -->
       <section id="servicos" style="margin-top:28px">
         <h2 style="margin-bottom:12px">Serviços e pacotes</h2>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
@@ -159,7 +160,6 @@
       </section>
 
       <!-- CONTATO -->
-      <!-- CONTATO -->
       <section id="contato" style="margin-top:28px">
         <h2 style="margin-bottom:12px">Contato</h2>
         <div style="display:grid;grid-template-columns:1fr 320px;gap:16px;align-items:start">
@@ -176,7 +176,7 @@
             </div>
           </form>
 
-                <aside class="card">
+          <aside class="card">
             <h3>Informações</h3>
             <p>Email: <strong id="emailText">seu.email@exemplo.com</strong></p>
             <p>Localização: Remoto (Brasil)</p>
@@ -194,7 +194,7 @@
       </section>
     </main>
 
-       <footer>
+    <footer>
       <div>&copy; <span id="year"></span> Seu Nome • Desenvolvedor Web</div>
       <div><a href="#">Termos</a> | <a href="#">Privacidade</a></div>
     </footer>
@@ -203,4 +203,4 @@
   <!-- JS externo -->
   <script src="script.js"></script>
 </body>
-</html> 
+</html>

@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Reinaldo Fernandes — Desenvolvedor Front-end & Freelancer</title>
   <meta name="description" content="Portfólio e página de serviços para desenvolvedor iniciante / freelancer. Projetos, serviços, pacotes e contato." />
   <meta property="og:title" content="Seu Nome — Desenvolvedor & Freelancer">
@@ -120,32 +120,76 @@
       </section>
 
       <!-- SERVIÇOS -->
-      <section id="servicos" style="margin-top:28px">
-        <h2 style="margin-bottom:12px">Serviços e pacotes</h2>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
-          <div class="card">
-            <h3>Pacote Rápido</h3>
-            <p style="color:var(--muted);">Página simples (1-3 seções) — ideal para MVPs.</p>
-            <div style="margin-top:12px;font-weight:800">R$ XXX</div>
-            <div style="margin-top:10px"><button class="btn" onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">Contratar</button></div>
-          </div>
-          <div class="card">
-            <h3>Pacote Profissional</h3>
-            <p style="color:var(--muted);">Landing + formulário + SEO básico + deploy.</p>
-            <div style="margin-top:12px;font-weight:800">R$ XXX</div>
-            <div style="margin-top:10px"><button class="btn" onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">Contratar</button></div>
-          </div>
-          <div class="card">
-            <h3>Manutenção Mensal</h3>
-            <p style="color:var(--muted);">Atualizações, correções e melhorias mensais.</p>
-            <div style="margin-top:12px;font-weight:800">R$ XXX/mês</div>
-            <div style="margin-top:10px"><button class="btn" onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">Contratar</button></div>
-          </div>
-        </div>
-      </section>
+ <section id="servicos" style="margin-top:40px">
+  <h2 style="margin-bottom:20px;text-align:center"> Serviços e Pacotes</h2>
+  
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px">
+    
+    <!-- Pacote Rápido -->
+    <div class="card" style="padding:20px;border:1px solid #eee;border-radius:12px;box-shadow:0 3px 8px rgba(0,0,0,0.06);">
+      <h3 style="margin-bottom:8px">Pacote Rápido</h3>
+      <p style="color:var(--muted);font-size:14px;">
+        Página simples (1–3 seções) — ideal para <strong>MVPs</strong> ou testes de ideia.
+      </p>
+      <ul style="margin:12px 0;padding-left:18px;font-size:14px;color:#666;line-height:1.5;">
+        <li>Layout responsivo</li>
+        <li>Integração com WhatsApp</li>
+        <li>Entrega em até 5 dias</li>
+      </ul>
+      <div style="margin-top:12px;font-weight:800;font-size:18px;color:var(--accent)">R$ 600</div>
+      <div style="margin-top:14px">
+        <button class="btn" onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">
+          Contratar
+        </button>
+      </div>
+    </div>
+    
+    <!-- Pacote Profissional -->
+    <div class="card destaque" style="padding:20px;border:2px solid var(--accent);border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+      <h3 style="margin-bottom:8px">Pacote Profissional ⭐</h3>
+      <p style="color:var(--muted);font-size:14px;">
+        <strong>Landing Page completa</strong> com foco em conversão e SEO.
+      </p>
+      <ul style="margin:12px 0;padding-left:18px;font-size:14px;color:#666;line-height:1.5;">
+        <li>Design moderno e personalizado</li>
+        <li>Formulário de contato integrado</li>
+        <li>SEO básico otimizado</li>
+        <li>Deploy incluso</li>
+      </ul>
+      <div style="margin-top:12px;font-weight:800;font-size:18px;color:var(--accent)">R$ 1.200</div>
+      <div style="margin-top:14px">
+        <button class="btn" onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">
+          Contratar
+        </button>
+      </div>
+    </div>
+    
+    <!-- Manutenção Mensal -->
+    <div class="card" style="padding:20px;border:1px solid #eee;border-radius:12px;box-shadow:0 3px 8px rgba(0,0,0,0.06);">
+      <h3 style="margin-bottom:8px">Manutenção Mensal</h3>
+      <p style="color:var(--muted);font-size:14px;">
+        Ideal para quem já tem site e precisa manter ele sempre atualizado.
+      </p>
+      <ul style="margin:12px 0;padding-left:18px;font-size:14px;color:#666;line-height:1.5;">
+        <li>Correções de bugs</li>
+        <li>Pequenas alterações de design</li>
+        <li>Otimizações de desempenho</li>
+        <li>Suporte contínuo</li>
+      </ul>
+      <div style="margin-top:12px;font-weight:800;font-size:18px;color:var(--accent)">R$ 350/mês</div>
+      <div style="margin-top:14px">
+        <button class="btn" onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">
+          Contratar
+        </button>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
 
       <!-- DEPOIMENTOS -->
-      <section style="margin-top:28px">
+      <section class="contato" style="margin-top:28px">
         <h2 style="margin-bottom:12px">Depoimentos</h2>
         <div class="testimonials">
           <div class="testimonial card">
@@ -178,8 +222,8 @@
 
           <aside class="card">
             <h3>Informações</h3>
-            <p>Email: <strong id="emailText">seu.email@exemplo.com</strong></p>
-            <p>Localização: Remoto (Brasil)</p>
+            <p>Email: <strong id="emailText">reinaldo.f.menezes@outlook.com</strong></p>
+            <p>Localização: Natal/RN</p>
             <div style="margin-top:12px">
               <label style="font-weight:700">Newsletter</label>
               <p>Receba dicas grátis e templates (1x por mês)</p>

@@ -18,7 +18,7 @@ O projeto é simples, responsivo e feito apenas com **HTML, CSS e JavaScript**, 
 - 💼 **Pronto para vender** como template ou base de landing pages
 
 ## 🖼️ Prévia
-![preview](./preview.png) <!-- você pode gerar e colocar um print da página -->
+![preview](https://github.com/Reinaldo-Fernandes/Site-Pessoal-Freelancer/raw/main/page.png) <!-- você pode gerar e colocar um print da página -->
 
 ## 🔧 Como usar
 1. Clone este repositório:
@@ -68,3 +68,6 @@ Crio **interfaces limpas, funcionais e rápidas**, sempre buscando soluções si
 
 > ⚡ Estou sempre aberto a novos desafios e colaborações.  
 Se você gostou dos projetos, pode usá-los, personalizar e até mesmo vender os designs 😉
+
+
+

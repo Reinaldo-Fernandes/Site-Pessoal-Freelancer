@@ -184,6 +184,7 @@ nav a{
     display:flex;
     gap:12px;
     overflow:hidden;
+    flex-wrap: wrap; /* Adiciona quebra de linha em telas menores */
 }
 
 .testimonial{
@@ -206,6 +207,9 @@ footer{
 @media (max-width:880px){
   .hero{grid-template-columns:1fr;};
   .hero-right{order:-1};
+  #contato > div {
+    grid-template-columns: 1fr; /* Adiciona essa regra para telas pequenas */
+  }
 }
 
 /* Background dots */

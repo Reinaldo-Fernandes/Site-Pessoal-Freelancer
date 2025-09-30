@@ -208,7 +208,7 @@ footer{
   .hero{grid-template-columns:1fr;};
   .hero-right{order:-1};
   #contato > div {
-    grid-template-columns: 1fr; /* Adiciona essa regra para telas pequenas */
+    grid-template-columns: 1fr; 
   }
 }
 
